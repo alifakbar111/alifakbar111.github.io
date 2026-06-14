@@ -1,0 +1,28 @@
+---
+const links = [
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
+];
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-sm border-b border-gray-800">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="#" class="text-sm font-semibold text-white hover:text-teal-400 transition-colors">
+      Alif Akbar
+    </a>
+    <ul class="hidden sm:flex items-center gap-6">
+      {
+        links.map(({ href, label }) => (
+          <li>
+            <a href={href} class="text-sm text-gray-400 hover:text-white transition-colors">
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
