@@ -1,0 +1,50 @@
+---
+const links = [
+  {
+    label: 'Email',
+    href: 'mailto:alifakbar111@gmail.com',
+    sublabel: 'alifakbar111@gmail.com',
+  },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/alifakbar111',
+    sublabel: 'github.com/alifakbar111',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/alifakbar111/',
+    sublabel: 'linkedin.com/in/alifakbar111',
+  },
+];
+---
+
+<section id="contact" class="py-20 px-6 bg-gray-900/30">
+  <div class="max-w-5xl mx-auto fade-in">
+    <h2 class="text-2xl font-bold text-white mb-2">Contact</h2>
+    <div class="w-10 h-0.5 bg-teal-400 mb-10"></div>
+
+    <p class="text-gray-400 text-lg mb-10 max-w-xl">
+      Open to new opportunities. Feel free to reach out via email or connect on LinkedIn.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4">
+      {
+        links.map(({ label, href, sublabel }) => (
+          <a
+            href={href}
+            target={href.startsWith('http') ? '_blank' : undefined}
+            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            class="flex flex-col px-6 py-4 border border-gray-800 rounded-xl hover:border-teal-400/50 hover:bg-gray-900 transition-all"
+          >
+            <span class="text-xs text-teal-400 font-medium mb-1">{label}</span>
+            <span class="text-sm text-gray-300">{sublabel}</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 px-6 text-center text-gray-600 text-xs border-t border-gray-800">
+  Built with Astro & Tailwind CSS · Muhammad Alif Akbar © 2026
+</footer>
