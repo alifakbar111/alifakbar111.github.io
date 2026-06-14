@@ -1,0 +1,38 @@
+---
+const links = [
+  { href: 'https://github.com/alifakbar111', label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/alifakbar111/', label: 'LinkedIn' },
+  { href: 'mailto:alifakbar111@gmail.com', label: 'Email' },
+];
+---
+
+<section class="min-h-screen flex items-center px-6 pt-14">
+  <div class="max-w-5xl mx-auto w-full py-24">
+    <p class="text-teal-400 text-sm font-medium mb-3 tracking-widest uppercase">Hello, I'm</p>
+    <h1 class="text-5xl sm:text-6xl font-bold text-white mb-4 leading-tight">
+      Muhammad Alif Akbar
+    </h1>
+    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-400 mb-6">
+      Frontend Product Engineer
+    </h2>
+    <p class="text-gray-400 max-w-2xl text-lg leading-relaxed mb-10">
+      4+ years building scalable, high-performance web applications with React, Next.js, and
+      modern JavaScript ecosystems. Leading frontend teams and shipping products that consistently
+      hit 90+ Lighthouse scores.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      {
+        links.map(({ href, label }) => (
+          <a
+            href={href}
+            target={href.startsWith('http') ? '_blank' : undefined}
+            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            class="px-5 py-2.5 text-sm font-medium border border-gray-700 rounded-lg text-gray-300 hover:border-teal-400 hover:text-teal-400 transition-colors"
+          >
+            {label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
