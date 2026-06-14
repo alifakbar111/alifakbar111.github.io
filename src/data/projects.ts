@@ -2,13 +2,6 @@ import type { Project } from './types';
 
 export const projects: Project[] = [
   {
-    name: 'Ayo Hero',
-    description:
-      'Feature-rich React SPA with advanced UI components, data visualization, QR code and PDF generation.',
-    tags: ['React', 'TypeScript', 'shadcn/ui', 'React Query', 'Recharts'],
-    category: 'work',
-  },
-  {
     name: 'Bakti DNA',
     description:
       'Admin backoffice platform with Chakra UI, full Cypress e2e test suite, and Nx monorepo setup.',
@@ -50,10 +43,17 @@ export const projects: Project[] = [
     category: 'work',
   },
   {
-    name: 'SSO PoC',
+    name: 'Simpan',
     description:
-      'Three-SPA multi-tenant SSO proof-of-concept with silent cross-app session sharing via Azure Entra and AWS Cognito.',
-    tags: ['React', 'TypeScript', 'MSAL.js', 'oidc-client-ts', 'Vite'],
+      'Investment management platform with KYC verification, role-based access control, asset dashboard, and Flutter mobile app.',
+    tags: ['React', 'Chakra UI', 'Fastify', 'Nx', 'Flutter'],
+    category: 'work',
+  },
+  {
+    name: 'Rukun Raharja',
+    description:
+      'Raja.co.id residential community website with Strapi CMS backend and React Router frontend.',
+    tags: ['React Router', 'Strapi', 'TypeScript', 'Moon', 'Biome'],
     category: 'work',
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     description:
       'React and Solid.js component library with 40+ accessible components published to npm as @01group-ui.',
     tags: ['React', 'Solid.js', 'Tailwind CSS', 'Ark UI', 'TypeScript'],
-    category: 'work',
+    category: 'side',
   },
   {
     name: 'SkillPass',
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     url: 'https://github.com/alifakbar111',
   },
   {
-    name: 'LMS EU FE',
+    name: 'LMS EU',
     description:
       'Enterprise Learning Management System frontend for Pupuk Indonesia with SCORM, SSO, and video streaming.',
     tags: ['Nuxt 2', 'Vuetify', 'Firebase', 'SCORM', 'TypeScript'],
