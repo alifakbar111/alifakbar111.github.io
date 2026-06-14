@@ -5,7 +5,8 @@ export interface Project {
   description: string;
   tags: string[];
   category: ProjectCategory;
-  url?: string;
+  repo?: string;
+  site?: string;
 }
 
 export interface ExperienceEntry {

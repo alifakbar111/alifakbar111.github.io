@@ -62,6 +62,7 @@ export const projects: Project[] = [
       'React and Solid.js component library with 40+ accessible components published to npm as @01group-ui.',
     tags: ['React', 'Solid.js', 'Tailwind CSS', 'Ark UI', 'TypeScript'],
     category: 'side',
+    repo: 'https://github.com/zero-one-group/zog-ui',
   },
   {
     name: 'SkillPass',
@@ -69,7 +70,7 @@ export const projects: Project[] = [
       'Talent marketplace SPA with AI-powered skill evaluation, job posting, and JWT authentication.',
     tags: ['React 19', 'React Router 7', 'Vite', 'Tailwind CSS', 'DaisyUI'],
     category: 'side',
-    url: 'https://github.com/alifakbar111',
+    repo: 'https://github.com/alifakbar111/skillpass',
   },
   {
     name: 'LMS EU',
