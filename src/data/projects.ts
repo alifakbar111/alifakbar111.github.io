@@ -79,4 +79,13 @@ export const projects: Project[] = [
     tags: ['Nuxt 2', 'Vuetify', 'Firebase', 'SCORM', 'TypeScript'],
     category: 'side',
   },
+  {
+    name: 'monis-workspace',
+    description:
+      'Next.js 16 web app for furnishing and renting coworking desk spaces in Bali through a Sims-style isometric room builder with drag-and-drop, real-time pricing, and Sanity CMS integration.',
+    tags: ['Next.js 16', 'Tailwind CSS v4', 'Zustand', 'dnd-kit', 'Framer Motion', 'Sanity', 'Vercel'],
+    category: 'side',
+    repo: 'https://github.com/alifakbar111/monis-workspace',
+    site: 'https://monis-workspace-livid.vercel.app',
+  },
 ];
